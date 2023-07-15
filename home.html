@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="apk.css">
+<link rel="icon" href="Travel_boy.webp">
+<title>Play challenge</title>
+<html>
+<head>
+  <style>
+    #spaceship {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      background-image: url('wall.png');
+      background-size: cover;
+    }
+    
+    .asteroid {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-image: url('wall.png');
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="spaceship"></div>
+  
+  <style>
+    #spaceship {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      background-image: url('spaceship.png');
+      background-size: cover;
+    }
+    
+    .asteroid {
+      position: absolute;
+      width: 300px;
+      height: 30px;
+      background-image: url('asteroid.png');
+      background-size: cover;
+      color: aliceblue;
+    }
+    
+    #timer {
+      position: absolut;
+      top: 4px;
+      right: 10px;
+      font-size: 30px;
+      color: rgb(242, 255, 0);
+      font-weight: 900;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="spaceship"></div>
+  <div id="timer">الوقت: 0 ثانية</div>
+  
+  <script>
+    var gameArea = document.body;
+    var timerElement = document.getElementById('timer');
+    var startTime = Date.now();
+    var score = 0;
+    
+    function updateTimer() {
+      var currentTime = Date.now();
+      var elapsedTime = Math.floor((currentTime - startTime) / 1000);
+      timerElement.innerText = 'POINTS : ' + elapsedTime + ' ';
+    }
+    
+    setInterval(updateTimer, 1000);
+    
+    // ... الكود السابق المستمر ...
+</script>
+
+
+<div class="intro" >
+  <img style="border-radius: 30px;" class="logo" src="Travel_boy.webp" alt="Logo"> 
+</div>
+
+<footer class="home-footer">
+  <span style="color: aliceblue;" class="home-text24">
+  <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-transform: uppercase; font-size: 15px; ">Play and challenge your friends</h3><img style="height: 35px;" src="Travel_boy.webp" alt="">
+
+ </span>
+</footer>
+</div>
+</div>
+  <script src="apk.js"></script>
+</body>
+</html>
